@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02</title>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Novos campos</legend>
+            <!--Campo oculto-->
+            <input type="hidden" id="idCliente">
+            <label for="">Foto</label>
+            <input type="file" name="" id="foto" accept="image/*">
+            <!--Necessário ENCTYPE para envio de imagem-->
+            <br />
+            <label for="">Regiões</label>
+            <select name="regiao" id="regiao">
+                <option value="N">Norte</option>
+                <option value="NE">Nordeste</option>
+                <option value="CO">Sudoeste</option>
+                <option value="SE">Sudeste</option>
+                <option value="S">Sul</option>
+            </select>
+            <br />
+            <label for="">
+                <input type="checkbox" name="esporte" id="" value="Atl">Atletismo
+            </label>
+            <label for="">
+                <input type="checkbox" name="esporte" value="Nat">Natação
+            </label>
+            <label for="">
+                <input type="checkbox" name="esporte" value="Fut">Futebol
+            </label>
+            <br>
+            <label for="">Escolaridade:</label>
+            <label for="">
+                <input type="radio" name="escolaridade" value="EF" required>Ensino Fundamental
+            </label>
+            <label for="">
+                <input type="radio" name="escolaridade" id="EM" required>Ensino Médio
+            </label>
+            <label for="">
+                <input type="radio" name="escolaridade" id="SUP" required>Ensino Superior
+            </label>
+            <label for="">
+                <input type="radio" name="escolaridade" id="POS">Pós Graduação
+            </label>
+            <br>
+            <label for="">Deixe sua opinião</label>
+            <textarea cols="70" rows="10" name="opinião" id="opinião" maxlength="300"
+                placeholder="Sua opinião!"></textarea>
+        </fieldset>
+    </form>
+</body>
+
+</html>
